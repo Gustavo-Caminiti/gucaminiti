@@ -1,77 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gustavo Caminiti - Site Pessoal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body>
+  <div class="container">
+    <!-- Sidebar esquerda -->
+    <aside class="sidebar">
+      <div class="profile-pic">
+        <img src="foto-rosto-perfil.png" alt="Foto de Gustavo Caminiti">
+      </div>
+      <h1>Gustavo Caminiti</h1>
+      <p><strong>Desenvolvedor Full Stack Jr. | Professor | Pesquisador</strong></p>
 
-    <!-- Layout Principal -->
-    <div class="flex flex-col md:flex-row h-screen">
+      <!-- Seção de Contato movida para baixo -->
+      <section class="section" id="contact">
+        <h2>Contato</h2>
+        <div class="row">
+            <p><strong>Localização</strong>: Ribeirão Preto, SP</p>
+        </div>
+        <div class="row">
+            <p><strong>E-mail</strong>: <a href="mailto:gucaminiti@gmail.com">gucaminiti@gmail.com</a></p>
+        </div>
         
-        <!-- Sidebar Esquerda -->
-        <aside class="w-full md:w-1/4 bg-gray-800 p-6 flex flex-col items-center text-center md:text-left">
-            <img src="foto-rosto-perfil.png" alt="Foto de Perfil" class="w-32 h-32 rounded-full border-4 border-gray-600">
-            <h1 class="text-2xl font-bold mt-4">Gustavo Caminiti</h1>
-            <p class="text-gray-400">Desenvolvedor Full Stack Jr.</p>
+        <p><strong>WhatsApp</strong>: (16) 98831-9118</p>
+       <!--
+        <p><strong>GitHub</strong>: <a href="https://github.com/gustavocaminiti" target="_blank">github.com/gustavocaminiti</a></p>
+        <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gustavocaminiti" target="_blank">linkedin.com/in/gustavocaminiti</a></p>
+        -->
+      </section>
+      <!--
+      <ul class="social-links">
+        <li><a href="https://github.com/gustavocaminiti" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gustavocaminiti" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:gucaminiti@gmail.com">E-mail</a></li>
+      </ul>
+    -->
+    <section class="section" id="technologies">
+        <h2>Tecnologias</h2>
+        <p><strong>Front-end</strong>: HTML, CSS, JavaScript, React, EJS</p>
+        <p><strong>Back-end</strong>: Node.js, Express, JWT, Bcrypt</p>
+        <p><strong>Banco de Dados</strong>: MySQL</p>
+        <p><strong>Ferramentas</strong>: Git, GitHub, VS Code</p>
+      </section>
 
-            <div class="mt-4 flex space-x-4">
-                <a href="https://github.com/seu-username" class="text-gray-300 hover:text-white">GitHub</a>
-                <a href="https://linkedin.com/in/seu-username" class="text-gray-300 hover:text-white">LinkedIn</a>
-                <a href="mailto:email@email.com" class="text-gray-300 hover:text-white">E-mail</a>
-            </div>
-        </aside>
+      <section class="section" id="languages">
+        <h2>Idiomas</h2>
+        <ul>
+          <li><strong>Português</strong> – Nativo</li>
+          <li><strong>Inglês</strong> – Intermediário</li>
+          <li><strong>Francês</strong> – Básico</li>
+        </ul>
+      </section>
 
-        <!-- Conteúdo Principal -->
-        <main class="w-full md:w-3/4 p-8 overflow-auto">
-            
-            <!-- Botão de Menu (aparece só no mobile) -->
-            <button id="menu-btn" class="md:hidden bg-gray-700 text-white px-4 py-2 rounded mb-4">
-                ☰ Menu
-            </button>
+    </aside>
 
-            <section id="sobre">
-                <h2 class="text-3xl font-bold">Sobre Mim</h2>
-                <p class="mt-2 text-gray-400">Sou um desenvolvedor apaixonado por tecnologia, com experiência em JavaScript, Node.js, React e bancos de dados MySQL.</p>
-            </section>
+    <!-- Conteúdo Principal -->
+    <main class="content">
+      <section class="section" id="about">
+        <h2>Sobre mim</h2>
+        <p>Sou apaixonado por tecnologia e educação, com sólida formação acadêmica e uma carreira diversificada que inclui o desenvolvimento de software, ensino superior e pesquisa científica. Tenho experiência prática em desenvolvimento Full Stack, com forte interesse por soluções inovadoras que integram diferentes tecnologias para resolver problemas complexos.</p>
+      </section>
 
-            <section id="habilidades" class="mt-8">
-                <h2 class="text-3xl font-bold">Habilidades</h2>
-                <ul class="mt-2 text-gray-400">
-                    <li>✔️ JavaScript, HTML, CSS</li>
-                    <li>✔️ Node.js, Express, MySQL</li>
-                    <li>✔️ React.js, Tailwind CSS</li>
-                    <li>✔️ Git, GitHub, Docker</li>
-                </ul>
-            </section>
+      <section class="section" id="education">
+        <h2>Formação Acadêmica</h2>
+        <ul>
+          <li><strong>Administração de Empresas</strong> – 2003, Universidade de Ribeirão Preto (UNAERP)</li>
+          <li><strong>Engenharia da Computação</strong> – Previsão de Conclusão: 2029</li>
+          <li><strong>Doutorado em Ciência</strong> – 2015, Universidade de São Paulo (USP-RP)<br> (Descritores da tese: Dengue, Epidemiologia, Saúde Pública, Análise Estatística e Análise Espacial.)</li>
+        </ul>
+      </section>
 
-            <section id="projetos" class="mt-8">
-                <h2 class="text-3xl font-bold">Projetos</h2>
-                <div class="mt-4 space-y-4">
-                    <div class="bg-gray-800 p-4 rounded">
-                        <h3 class="text-xl font-semibold">Projeto 1</h3>
-                        <p class="text-gray-400">Descrição breve do projeto.</p>
-                        <a href="#" class="text-blue-400 hover:underline">Ver no GitHub</a>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded">
-                        <h3 class="text-xl font-semibold">Projeto 2</h3>
-                        <p class="text-gray-400">Descrição breve do projeto.</p>
-                        <a href="#" class="text-blue-400 hover:underline">Ver no GitHub</a>
-                    </div>
-                </div>
-            </section>
+      <section class="section" id="experience">
+        <h2>Experiência Profissional</h2>
+        <ul>
+          <li><strong>Desenvolvedor Full Stack Jr.</strong> – Desde Maio/2024 – Atual
+          <p>Desenvolvimento de aplicações web com <strong>Node.js</strong>, <strong>Express</strong>, <strong>React</strong>, e <strong>MySQL</strong>. Projetos focados na criação de sistemas dinâmicos e eficientes, com uma ênfase em segurança e escalabilidade.</p></li>
 
-            <section id="contato" class="mt-8">
-                <h2 class="text-3xl font-bold">Contato</h2>
-                <p class="mt-2 text-gray-400">Entre em contato pelo e-mail <a href="mailto:email@email.com" class="text-blue-400">email@email.com</a></p>
-            </section>
-        </main>
-    </div>
+          <li><strong>Professor Universitário</strong> – UNAERP
+          <p>Ministrei aulas para cursos de <strong>Engenharia Química</strong>, <strong>Engenharia da Computação</strong>, e <strong>Administração de Empresas</strong>, abordando disciplinas como <strong>Estatística</strong>, <strong>Matemática Financeira</strong>, <strong>Lógica de Programação</strong> (C++, Perl + MySQL), <strong>Geoprocessamento</strong>, <strong>AutoCAD</strong>, entre outras.</p></li>
 
-    <script src="script.js"></script>
+          <li><strong>Sócio na Actio – Soluções em Geotecnologias</strong>
+          <p>Consultoria especializada em mapeamento e estudos de impacto ambiental. Trabalhei em projetos para urbanização e sustentabilidade, com uso de <strong>Geoprocessamento</strong> e <strong>Sensoriamento Remoto</strong>.</p></li>
 
+          <li><strong>Coordenador de Laboratório na UNAERP</strong>
+          <p>Coordenei um laboratório voltado para <strong>Sensoriamento Remoto</strong> e <strong>Geoprocessamento</strong>, aplicado a pesquisas acadêmicas, focando em soluções inovadoras para questões ambientais e urbanísticas.</p></li>
+        </ul>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Competências & Habilidades</h2>
+        <ul>
+          <li>Bom relacionamento interpessoal</li>
+          <li>Capacidade de adaptação e aprendizado contínuo</li>
+          <li>Autodidata e colaborativo em equipe</li>
+          <li>Curiosidade para novas tendências em TI</li>
+          <li>Organização e gestão do tempo</li>
+          <li>Comunicação clara e objetiva</li>
+        </ul>
+      </section>
+
+      <section class="section" id="technologies">
+        <h2>Tecnologias</h2>
+        <p><strong>Front-end</strong>: HTML, CSS, JavaScript, React, EJS</p>
+        <p><strong>Back-end</strong>: Node.js, Express, JWT, Bcrypt</p>
+        <p><strong>Banco de Dados</strong>: MySQL</p>
+        <p><strong>Ferramentas</strong>: Git, GitHub, VS Code</p>
+      </section>
+
+      <section class="section" id="languages">
+        <h2>Idiomas</h2>
+        <ul>
+          <li><strong>Português</strong> – Nativo</li>
+          <li><strong>Inglês</strong> – Intermediário</li>
+          <li><strong>Francês</strong> – Básico</li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

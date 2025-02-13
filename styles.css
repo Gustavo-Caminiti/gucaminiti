@@ -1,4 +1,0 @@
-/* Adiciona um efeito suave ao hover dos links */
-a {
-    transition: color 0.3s ease-in-out;
-}
