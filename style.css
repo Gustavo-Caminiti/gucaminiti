@@ -65,7 +65,7 @@
   }
   
   .social-links a {
-    color: #fff;
+    /*color: #fff;*/
     text-decoration: none;
     font-size: 1.2em;
   }
@@ -118,4 +118,10 @@
       flex: 1 1 100%;
     }
   }
+  
+  #lefttext p{
+    font-size: 14px;
+    text-align: left;
+  }
+    
   
